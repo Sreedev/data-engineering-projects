@@ -1,9 +1,17 @@
-# Data Engineering Projects by Sreedev
-This respository contains the consolidation of all my data engineering projects. 
+# Data Engineering Interview Questions from varios sources, consolidated by Sreedev
+This is a place you can come to prepare for the data engineering interviews. I am consolidating questions from different sources to prepare the most relevent source of data engineering interview questions.  
 
-## Projects
-1. Pizza Sales Analysis - *Postgres SQL, Python, Pandas, Power BI*
+## Interview Questions
 
+1. Can you explain the design schemas relevant to data modeling?
+   There are three data modeling design schemas: Star, Snowflake, and Galaxy. Browse to understand more about these schemas.
+   
+2. Which ETL tools have you worked with? What is your favorite, and why?
+   You can list the tools you have used the most and well versed with. 
+
+---------------------------------------------------------------------------------
+##References
+1. Datacamp - https://www.datacamp.com/blog/top-21-data-engineering-interview-questions-and-answers
 ----------------------------------------------------------------------------------
 
 ### ☕[BUY ME A COFFEE](https://www.buymeacoffee.com/thelifeimprovised)!
