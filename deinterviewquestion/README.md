@@ -4,7 +4,7 @@ This is a place you can come to prepare for the data engineering interviews. I a
 ## Interview Questions
 
 1. Can you explain the design schemas relevant to data modeling?
-   There are three data modeling design schemas: Star, Snowflake, and Galaxy. Browse to understand more about these schemas.
+     There are three data modeling design schemas: Star, Snowflake, and Galaxy. Browse to understand more about these schemas.
    
 2. Which ETL tools have you worked with? What is your favorite, and why?
    You can list the tools you have used the most and well versed with. 
