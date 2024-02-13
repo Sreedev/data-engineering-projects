@@ -1,5 +1,6 @@
-# Data Engineering Projects by Sreedev
-This respository contains the consolidation of all my data engineering projects. 
+# Data Engineering Projects
+## Created and maintained by Sreedev
+This repository contains the consolidation of all my data engineering passion projects. 
 
 ## Projects
 1. Pizza Sales Analysis - *Postgres SQL, Python, Pandas, Power BI*
