@@ -3,7 +3,7 @@
 This repository contains the consolidation of all my data engineering passion projects. 
 
 ## Projects
-1. Pizza Sales Analysis - *Postgres SQL, Python, Pandas, Power BI*
+1. **Pizza Sales Analysis** - *Postgres SQL, Python, Pandas, Power BI*
 
 ----------------------------------------------------------------------------------
 
