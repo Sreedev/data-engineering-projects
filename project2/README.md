@@ -1,5 +1,7 @@
 # DVD Rental Data modelling for datawarehouse
 
+![star_schema_dvd_rental](https://github.com/Sreedev/data-engineering-projects/assets/1217856/3dee52ed-23f9-4dc1-ab4f-0df9acc681d9)
+
 ## Creation of tables in the schema
 **Creating the dimDate table**
 ```
