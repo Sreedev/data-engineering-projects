@@ -178,26 +178,21 @@ CREATE TABLE factsales
 	date_key integer REFERENCES dimDate(date_key),
 	customer_key integer REFERENCES dimCustomer (customer_key),
 	movie_key integer REFERENCES dimMovie(movie_key),
-	store_key integer REFERENCES dimStore(store_key),
 	sales_amount numeric
 );
 ```
 **Interting data to fact table**
 ```
-INSERT INTO factsales(date_key,customer_key,movie_key,store_key,sales_amount)
-SELECT 
-TO_CHAR(payment_date :: DATE, 'yyyMMDD')::integer as date_key,
-p.customer_id as customer_key,
-i.film_id as movie_key,
-p.amount as sales_amount,
-s.store_id as store_key
-
-FROM payment p
-JOIN rental r ON (p.rental_id=r.rental_id)
-JOIN inventory i ON(r.inventory_id=i.inventory_id)
-JOIN customer c ON (p.customer_id=c.customer_id)
-JOIN address ad ON (ad.address_id=c.address_id)
-JOIN store s ON(s.address_id=ad.address_id);
+	INSERT INTO factsales(date_key,customer_key,movie_key,sales_amount)
+	SELECT 
+	TO_CHAR(payment_date :: DATE, 'yyyMMDD')::integer as date_key,
+	p.customer_id as customer_key,
+	i.film_id as movie_key,
+	p.amount as sales_amount
+	
+	FROM payment p
+	JOIN rental r ON (p.rental_id=r.rental_id)
+	JOIN inventory i ON(r.inventory_id=i.inventory_id);
 ```
 
 **Comparing the query timings of the transactional table with the datawarehouse we created**
@@ -214,8 +209,8 @@ JOIN city ci ON (a.city_id=ci.city_id)
 group by (f.title, month, ci.city)
 order by f.title, month,ci.city, revenue desc;
 ```
-**The above query took 311 milliseconds to execute.**
-**Comparing to previous query below query only took 255 milliseconds to execute. And that why datawarehouses are important**
+**The above query took 495 milliseconds to execute.**
+**Comparing to above query below query only took 290 milliseconds to execute that uses fact table. And thats why datawarehouses are important**
 ```
 SELECT dimmovie.title, dimdate.month, dimcustomer.city,sum(sales_amount) as revenue
 FROM factsales
