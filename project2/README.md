@@ -215,7 +215,7 @@ group by (f.title, month, ci.city)
 order by f.title, month,ci.city, revenue desc;
 ```
 **The above query took 311 milliseconds to execute.**
-
+**Comparing to previous query below query only took 255 milliseconds to execute. And that why datawarehouses are important**
 ```
 SELECT dimmovie.title, dimdate.month, dimcustomer.city,sum(sales_amount) as revenue
 FROM factsales
@@ -225,8 +225,6 @@ JOIN dimcustomer ON (dimcustomer.customer_key=factsales.customer_key)
 group by (dimmovie.title, dimdate.month, dimcustomer.city)
 order by dimmovie.title, dimdate.month,dimcustomer.city, revenue desc;
 ```
-
-**Comparing to previous query this query only took 255 milliseconds to execute. And that why datawarehouses are important**
 ----------------------------------------------------------------------------------
 
 ### ☕[BUY ME A COFFEE](https://www.buymeacoffee.com/thelifeimprovised)!
