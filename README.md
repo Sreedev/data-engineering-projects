@@ -3,8 +3,8 @@
 This repository contains the consolidation of all my data engineering passion projects. 
 
 ## Projects
-1. **Pizza Sales Analysis** - *Postgres SQL, Python, Pandas, Power BI*
-2. **DVD Rental datawarehouse creation** - *Postgres SQL, PgAdmin, draw.io*
+1. project1 - **Pizza Sales Analysis** - *Postgres SQL, Python, Pandas, Power BI*
+2. project2 - **DVD Rental datawarehouse creation** - *Postgres SQL, PgAdmin, draw.io*
 
 ----------------------------------------------------------------------------------
 
