@@ -200,7 +200,7 @@ JOIN address ad ON (ad.address_id=c.address_id)
 JOIN store s ON(s.address_id=ad.address_id);
 ```
 
-## Comparing the query timings of the transactional table with the datawarehouse we created
+**Comparing the query timings of the transactional table with the datawarehouse we created**
 
 ```
 SELECT f.title, EXTRACT(month FROM p.payment_date) as month, ci.city, sum(p.amount) as revenue
