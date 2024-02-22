@@ -4,8 +4,8 @@ This repository contains the consolidation of all my data engineering passion pr
 
 ## Projects
 1. project1 - **Pizza Sales Analysis** - *Postgres SQL, Python, Pandas, Power BI*
-2. project2 - **DVD Rental datawarehouse creation** - *Postgres SQL, PgAdmin, draw.io*
-3. project3 - **Azure project**
+2. project2 - **DVD Rental data warehouse creation** - *Postgres SQL, PgAdmin, draw.io*
+3. project3 - **Creating Olympic data pipeline - ETL** - *Python, SQL, AZURE Data Factory, AZURE Gen2 Data lake, AZURE Synapse analytics, AZURE Databricks and Power BI*
 
 ----------------------------------------------------------------------------------
 
