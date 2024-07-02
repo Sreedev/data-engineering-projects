@@ -1,3 +1,4 @@
+![alttext](https://miro.medium.com/v2/resize:fit:828/format:webp/1*dOyRfkJ3aBKLrQCbCdwdJg.png)
 # DVD Rental Data modelling for datawarehouse
 
 ![star_schema_dvd_rental](https://github.com/Sreedev/data-engineering-projects/assets/1217856/3dee52ed-23f9-4dc1-ab4f-0df9acc681d9)
@@ -220,6 +221,8 @@ JOIN dimcustomer ON (dimcustomer.customer_key=factsales.customer_key)
 group by (dimmovie.title, dimdate.month, dimcustomer.city)
 order by dimmovie.title, dimdate.month,dimcustomer.city, revenue desc;
 ```
+# Check out this _[Blog](https://medium.com/@sreedev.r5/dvd-rental-datawarehouse-end-to-end-data-engineering-project-postgres-sql-pg-admin-draw-io-2c60f0f523bd)_ for step by step instructions.
+
 ----------------------------------------------------------------------------------
 
 ### ☕[BUY ME A COFFEE](https://www.buymeacoffee.com/thelifeimprovised)!
